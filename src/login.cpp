@@ -5,7 +5,7 @@
 #define NUMBER_OF_USERS 2
 
 // User users[NUMBER_OF_USERS] = { User{ .username={"user001"}, .password="password001" }, User{ .username={"user002"}, .password="password002" } };
-const User database[NUMBER_OF_USERS] = { User{ .username="user001", .password="password001" }, User{ .username="user002", .password="password002" } };
+const User database[NUMBER_OF_USERS] = { { "user001", "password001"} , { "user002", "password002" } };
 
 bool login(const char* username, const char* password)
 {

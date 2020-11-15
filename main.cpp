@@ -7,11 +7,6 @@
 
 int main (int argc, char** argv)
 {
-    if (argc-1 != 2) {
-        printf("Incorrect number of parameters, expected 2, have %d\n", argc-1);
-        return 1;
-    }
-
     char username[25];
     char password[25];
 

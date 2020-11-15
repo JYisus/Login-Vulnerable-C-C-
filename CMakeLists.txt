@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.5)
 project(modio)
 set (CMAKE_CXX_STANDARD 11)
+set (CMAKE_CXX_STANDARD_REQUIRED ON)
 
 IF( test AND test STREQUAL "on" )
   message("Testing enabled")
