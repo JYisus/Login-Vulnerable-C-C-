@@ -5,9 +5,11 @@
 #include "./include/login.h"
 #include "./include/users.h"
 
-int main (int argc, char** argv) {
+int main (int argc, char** argv)
+{
     if (argc-1 != 2) {
         printf("Incorrect number of parameters, expected 2, have %d\n", argc-1);
+        return 1;
     }
 
     char username[25];
@@ -19,9 +21,8 @@ int main (int argc, char** argv) {
     printf("Password: ");
     gets(password);
 
-
     bool loged = login(username, password);
-
+    
     if (loged) {
         printf("ACCESS GRANTED!\n");
         return 0;
